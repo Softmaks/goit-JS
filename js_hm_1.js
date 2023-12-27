@@ -50,3 +50,4 @@ let height = '1.75';
 
 const bmi = ;
 console.log(bmi); // 28.8
+
