@@ -36,7 +36,7 @@ console.log(Math.round(value))
 const companyName = 'Cyberdyne Systems';
 const repairBots = 150;
 const defenceBots = 50;
-const message = `Cyberdyne Systems has ${repairBots} bots in stock.`;
+const message = `${companyName} Systems has ${repairBots+defenceBots} bots in stock.`;
 console.log(message); // "Cyberdyne Systems has 200 bots in stock"
 
 
@@ -48,6 +48,74 @@ console.log(message); // "Cyberdyne Systems has 200 bots in stock"
 let weight = '88,3';
 let height = '1.75';
 
-const bmi = ;
-console.log(bmi); // 28.8
+weight = Number(weight.replace(",","."))
+height = Number(height.replace(",","."))
 
+const bmi1 = Number((weight / (height * height)).toFixed(1));
+const bmi2 = Number((weight / height ** 2).toFixed(1));
+const bmi3 = Number((weight / Math.pow(height, 2)).toFixed(1));
+
+console.log(bmi1); // 28.8
+console.log(bmi2); // 28.8
+console.log(bmi3); // 28.8
+
+
+//Example 7 - Операторы сравнения и приведение типов
+//Каким будет результат выражений?
+
+console.log(5 > 4);
+
+console.log(10 >= '7');
+
+console.log('2' > '12');
+console.log('2'.charCodeAt(0));
+
+console.log('2' < '12');
+console.log('12'.charCodeAt(0));
+
+console.log('4' == 4);
+
+console.log('6' === 6);
+
+console.log('false' === false);
+
+console.log(1 == true);
+
+console.log(1 === true);
+
+console.log('0' == false);
+
+console.log('0' === false);
+
+console.log('Papaya' < 'papaya');
+
+console.log('Papaya' === 'papaya');
+
+console.log(undefined == null);
+
+console.log(undefined === null);
+
+
+
+//Example 8 - Логические операторы
+//Каким будет результат выражений?
+
+console.log(true && 3);
+
+console.log(false && 3);
+
+console.log(true && 4 && 'kiwi');
+
+console.log(true && 0 && 'kiwi');
+
+console.log(true || 3);
+
+console.log(true || 3 || 4);
+
+console.log(true || false || 7);
+
+console.log(null || 2 || undefined);
+
+console.log((1 && null && 2) > 0);
+
+console.log(null || (2 && 3) || 4);
