@@ -37,7 +37,7 @@
 // // Для каждого элемента массива выведи в консоль строку в формате
 // // номер_элемента: значение_элемента.Нумерация элементов должна начинаться с 1.
 
-const fruits = ["🍎", "🍇", "🍑", "🍌", "🍋"];
+// const fruits = ["🍎", "🍇", "🍑", "🍌", "🍋"];
 
 // for (let i = 0; i <= fruits.length - 1; i += 1) {
 //   console.log(`${i + 1}: ${fruits[i]}`);
@@ -91,28 +91,42 @@ const fruits = ["🍎", "🍇", "🍑", "🍌", "🍋"];
 // // Результирующая строка не должна начинаться или заканчиваться пробельным символом.
 // // Скрипт должен работать для любой строки.
 
-const string = "Welcome to the future";
-const wordOth = string.trim().split(" ");
-wordOth.splice(0, 1);
-wordOth.splice(-1, 1);
+// const string = "Welcome to the future";
+// const wordOth = string.trim().split(" ");
+// wordOth.splice(0, 1);
+// wordOth.splice(-1, 1);
 
-console.log(string);
-console.log(wordOth);
-console.log(wordOth.join(" "));
+// console.log(wordOth);
+// console.log(wordOth.join(" "));
+
+// wordOth.pop();
+// wordOth.shift();
+// console.log(wordOth);
+// console.log(wordOth.join(" "));
 
 // // Example 6 - Массивы и строки
 // // Напиши скрипт который «разворачивает» строку (обратный порядок букв) и выводит ее в консоль.
 
 // const string = "Welcome to the future";
+// const reverseString = string.split("").reverse().join("");
+// console.log(reverseString);
 
 // // Example 7 - Сортировка массива с циклом
 // // Напиши скрипт сортировки массива строк в алфавитном порядке по первой букве элемента.
 
-// const langs = ["python", "javascript", "c++", "haskel", "php", "ruby"];
+const langs = ["python", "javascript", "c++", "haskel", "php", "ruby"];
 
 // // Example 8 - Поиск элемента
-// // Напиши скрипт поиска самого маленького числа в массиве. Код должен работать для любого массива чисел. Используй цикл для решения задачи.
+// // Напиши скрипт поиска самого маленького числа в массиве. Код должен работать для любого массива чисел.
+// Используй цикл для решения задачи.
 
 // const numbers = [2, 17, 94, 1, 23, 37];
-// let min;
-// console.log(min); // 1
+// let min = numbers[0];
+
+// for (const number of numbers) {
+//   if (number < min) {
+//     min = number;
+//   }
+// }
+
+// console.log(min);
