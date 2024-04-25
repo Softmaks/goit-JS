@@ -140,40 +140,44 @@
 //  ---------------------------------------------------------------------------------------------------------------------------------
 
 // Example 8 - Форматирование времени
-// Напиши функцию formatTime(minutes) которая переведёт значение minutes (количество минут) в строку в формате часов и минут HH:MM.
+// Напиши функцию formatTime(minutes) которая переведёт значение minutes (количество минут) в строку
+// в формате часов и минут HH:MM.
 
-const hours = Math.floor(totalMinutes / 60);
-const minutes = totalMinutes % 60;
-console.log(hours);
-console.log(minutes);
+// необходимо:
+// 1. минуты перевести часы в минуты(делем на / 60 и остаток на деление)
+// 2. подставляем 00 к часам и минутам
+// 3. соеденить все вместе
 
-const doubleDigitHours = String(hours).padStart(2, 0);
-const doubleDigitMinutes = String(minutes).padStart(2, 0);
-console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
+// function formatTime(totalminutes) {
+//   const hours = Math.floor(totalminutes / 60);
+//   const minutes = totalminutes % 60;
+//   const doubleDitHours = String(hours).padStart(2, 0);
+//   const doubleDitMinates = String(minutes).padStart(2, 0);
+//   return `${doubleDitHours}:${doubleDitMinates}`;
+// }
 
-function formatTime(minutes) {}
-
-console.log(formatTime(70)); // "01:10"
-console.log(formatTime(450)); // "07:30"
-console.log(formatTime(1441)); // "24:01"
+// console.log(formatTime(70)); // "01:10"
+// console.log(formatTime(450)); // "07:30"
+// console.log(formatTime(1441)); // "24:01"
 
 //  ---------------------------------------------------------------------------------------------------------------------------------
 
 // Example 9 - Коллекция курсов (includes, indexOf, push и т. д.)
 // Напишите функции для работы с коллекцией обучающих курсов courses:
 
-// addCourse(name) - добавляет курс в конец коллекции
-// removeCourse(name) - удаляет курс из коллекции
-// updateCourse(oldName, newName) - изменяет имя на новое
-// const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
+addCourse(name) - добавляет курс в конец коллекции
+removeCourse(name) - удаляет курс из коллекции
+updateCourse(oldName, newName) - изменяет имя на новое
+const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
 
-// addCourse('Express');
-// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
-// addCourse('CSS'); // 'У вас уже есть такой курс'
+addCourse('Express');
+console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+addCourse('CSS'); // 'У вас уже есть такой курс'
 
-// removeCourse('React');
-// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
-// removeCourse('Vue'); // 'Курс с таким имененем не найден'
+removeCourse('React');
+console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+removeCourse('Vue'); // 'Курс с таким имененем не найден'
 
-// updateCourse('Express', 'NestJS');
-// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+updateCourse('Express', 'NestJS');
+console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+ 
