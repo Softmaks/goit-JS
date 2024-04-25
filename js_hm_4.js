@@ -165,19 +165,58 @@
 // Example 9 - Коллекция курсов (includes, indexOf, push и т. д.)
 // Напишите функции для работы с коллекцией обучающих курсов courses:
 
-addCourse(name) - добавляет курс в конец коллекции
-removeCourse(name) - удаляет курс из коллекции
-updateCourse(oldName, newName) - изменяет имя на новое
-const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
+// addCourse(named); 'У вас уже есть такой курс'
+// removeCourse(named); 'Курс с таким имененем не найден'
+// updateCourse(oldName, newName);
 
-addCourse('Express');
-console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
-addCourse('CSS'); // 'У вас уже есть такой курс'
+// const courses = ["HTML", "CSS", "JavaScript", "Python", "PostgreSQL"];
 
-removeCourse('React');
-console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
-removeCourse('Vue'); // 'Курс с таким имененем не найден'
+// addCourse("Express");
+// console.log(courses);
+// addCourse("CSS");
+// console.log(courses);
 
-updateCourse('Express', 'NestJS');
-console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
- 
+// removeCourse("Python");
+// console.log(courses);
+// removeCourse("Vue");
+// console.log(courses);
+
+// updateCourse("Express", "NestJS");
+// console.log(courses);
+// updateCourse("ADASD", "DASD");
+// console.log(courses);
+
+// function addCourse(named) {
+//   if (courses.includes(named)) {
+//     console.log(`У вас уже есть уже курс ${named}`);
+//   } else {
+//     courses.push(named);
+//   }
+// }
+
+// // function removeCourse(named) {
+// //   if (!courses.includes(named)) {
+// //     console.log(`Курс с таким имененем ${named} не найден`);
+// //   } else {
+// //     const index = courses.indexOf(named);
+// //     courses.splice(index, 1);
+// //   }
+// // }
+
+// function removeCourse(named) {
+//   const index = courses.indexOf(named);
+//   if (index === -1) {
+//     console.log(`Курс с таким имененем ${named} не найден`);
+//   } else {
+//     courses.splice(index, 1);
+//   }
+// }
+
+// function updateCourse(oldName, newName) {
+//   const index = courses.indexOf(oldName);
+//   if (index === -1) {
+//     console.log(`Такого курсу не існує ${oldName}`);
+//   } else {
+//     courses[index] = newName;
+//   }
+// }
